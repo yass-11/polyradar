@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monitor.StudentController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #070545;">
+         <children>
+            <Label prefHeight="75.0" prefWidth="305.0" style="-fx-background-color: #1E90FF;" text="  Admin Panel" textFill="WHITE">
+               <font>
+                  <Font name="Colonna MT" size="23.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="68.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/covid.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <VBox prefHeight="256.0" prefWidth="300.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#TeacherView" prefHeight="16.0" prefWidth="33.0" style="-fx-background-color: #070545;">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/search.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField prefHeight="26.0" prefWidth="229.0">
+                           <HBox.margin>
+                              <Insets left="15.0" right="4.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="30.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#TeacherView" prefHeight="16.0" prefWidth="33.0" style="-fx-background-color: #070545;">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/monitor.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label text="DashBoard" textFill="WHITE">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#TeacherView" prefHeight="16.0" prefWidth="33.0" style="-fx-background-color: #070545;">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/graph.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label text="Active Cases" textFill="WHITE">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="276.0" prefWidth="300.0">
+               <children>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="245.0" prefWidth="300.0">
+                     <children>
+                        <ImageView fitHeight="125.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/manager.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="username" mnemonicParsing="false" onAction="#displayProfile" style="-fx-background-color: #070545;" text="Username" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="110.0" prefWidth="300.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#sceneLogin" text="Logout" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutX="300.0" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="310.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="302.0" fitWidth="610.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/bg3.jpg" />
+                     </image>
+                  </ImageView>
+               </children></VBox>
+            <TableView fx:id="displayTable" prefHeight="308.0" prefWidth="602.0">
+              <columns>
+                <TableColumn fx:id="colfirstName" prefWidth="75.0" text="firstname" />
+                <TableColumn fx:id="collastName" prefWidth="75.0" text="lastname" />
+                  <TableColumn fx:id="colemail" prefWidth="226.40005493164062" text="email" />
+                  <TableColumn fx:id="colfaculty" minWidth="0.0" prefWidth="71.99993896484375" text="faculty" />
+                  <TableColumn fx:id="colstate" prefWidth="74.4000244140625" text="state" />
+                  <TableColumn fx:id="colrole" prefWidth="77.5999755859375" text="role" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

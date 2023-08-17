@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monitor.TeacherController">
+   <children>
+      <ImageView fitHeight="621.0" fitWidth="828.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/bg1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="131.0" layoutY="98.0" prefHeight="425.0" prefWidth="492.0" style="-fx-background-color: #fff;">
+         <children>
+            <VBox alignment="CENTER_RIGHT" layoutX="81.0" layoutY="127.0" prefHeight="268.0" prefWidth="331.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT">
+                     <children>
+                        <Label text="First Name : " textFill="#495090">
+                           <font>
+                              <Font name="Symbol" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtFirstName" prefHeight="25.0" prefWidth="203.0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="61.0">
+                     <children>
+                        <Label text="Last Name : " textFill="#495090">
+                           <font>
+                              <Font name="Symbol" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtLastName" prefHeight="25.0" prefWidth="203.0">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="215.0">
+                     <children>
+                        <Label text="Address Email : " textFill="#495090">
+                           <font>
+                              <Font name="Symbol" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtEmails" prefHeight="25.0" prefWidth="203.0">
+                           <HBox.margin>
+                              <Insets left="9.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="228.0">
+                     <children>
+                        <Label text="Password :" textFill="#495090">
+                           <font>
+                              <Font name="Symbol" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtPassword" prefHeight="25.0" prefWidth="203.0">
+                           <HBox.margin>
+                              <Insets left="42.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="240.0">
+                     <children>
+                        <Label text="Faculty :" textFill="#495090">
+                           <font>
+                              <Font name="Symbol" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtFaculty" prefHeight="25.0" prefWidth="203.0">
+                           <HBox.margin>
+                              <Insets left="53.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label fx:id="welcomeText" />
+                  <Button mnemonicParsing="false" onAction="#insertTeacher" prefHeight="29.0" prefWidth="103.0" style="-fx-background-color: #495090;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Light" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Text fill="#054953" layoutX="149.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME  TO" wrappingWidth="117.984375">
+               <font>
+                  <Font name="Perpetua Titling MT Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#5371fd" layoutX="148.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="POLYRadar">
+               <font>
+                  <Font name="Segoe Fluent Icons" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="53.0" fitWidth="76.0" layoutX="257.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/covid.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="672.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneLogin" prefHeight="38.0" prefWidth="68.0" style="-fx-background-color: #495090;" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="1.0" layoutY="594.0" text="Teacher">
+         <font>
+            <Font name="Calibri Light" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

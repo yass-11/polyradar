@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="479.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monitor.UserController">
+   <children>
+      <ImageView fitHeight="496.0" fitWidth="864.0" layoutX="-5.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/bg0.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="464.0" layoutY="66.0" prefHeight="360.0" prefWidth="330.0" style="-fx-background-color: #e6eaea;">
+         <children>
+            <TextField fx:id="emailIdField" layoutX="46.0" layoutY="191.0" prefHeight="25.0" prefWidth="239.0" promptText="Example@stud.fils.upb.ro" />
+            <PasswordField fx:id="passwordField" layoutX="46.0" layoutY="230.0" prefHeight="25.0" prefWidth="239.0" promptText="********" />
+            <Button fx:id="submitButton" layoutX="46.0" layoutY="280.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="239.0" style="-fx-background-color: #5092d3;" text="log in" textFill="WHITE" />
+            <Text fill="#5092d3" layoutX="188.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forget Password ?" underline="true" />
+            <Text fill="#014751" layoutX="46.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Text>
+            <Line endX="-12.0" layoutX="147.0" layoutY="171.0" startX="-99.0" stroke="#014751" />
+            <Text fill="#054953" layoutX="81.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME  TO" wrappingWidth="117.984375">
+               <font>
+                  <Font name="Perpetua Titling MT Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#5371fd" layoutX="80.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="POLYRadar">
+               <font>
+                  <Font name="Segoe Fluent Icons" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="53.0" fitWidth="76.0" layoutX="189.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/covid.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="102.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customize your Sign up Page">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="73.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your role in the Politehnica to register">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="108.0" fitWidth="111.0" layoutX="60.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/stud_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="111.0" layoutX="191.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/prof_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="111.0" layoutX="334.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/manager.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="66.0" layoutY="348.0" mnemonicParsing="false" onAction="#SceneStudSup" style="-fx-background-color: #1e193c;" text="Student" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="208.0" layoutY="348.0" mnemonicParsing="false" onAction="#SceneTeacherSup" style="-fx-background-color: #1e193c;" text="Teacher" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="356.0" layoutY="348.0" mnemonicParsing="false" onAction="#SceneAdminSup" style="-fx-background-color: #1e193c;" text="Admin" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
